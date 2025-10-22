@@ -1,6 +1,6 @@
 alias gs='git status'
 
-function log() {
+function gl() {
   if [ $# -eq 0 ]; then
     git log --oneline --decorate --graph
   else
