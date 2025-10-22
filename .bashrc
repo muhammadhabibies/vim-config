@@ -14,7 +14,7 @@ function log() {
 # }
 
 # Commit current work as WIP and push to current branch
-function gitwip {
+function wip {
     git add -A
     git commit -m "wip"
 
