@@ -22,7 +22,7 @@ function wip {
     current_branch=$(git symbolic-ref --short HEAD 2>/dev/null)
 
     if [ -n "$current_branch" ]; then
-        echo "Pushing WIP commit to branch '$current_branch'..."
+        # echo "Pushing WIP commit to branch '$current_branch'..."
         git push origin "$current_branch"
     else
         echo "❌ Bukan di branch apa pun (mungkin detached HEAD). Tidak bisa push."
